@@ -9,7 +9,7 @@ Discord.js + Next.js + Express Template 🌐 Seamlessly connect with Prisma and 
 -   Rename `.env.example` to `.env` and fill out the variables.
 -   Setup your database provider in the `prisma/schema.prisma` file. (MongoDB default)
 -   Generate the Prisma client: `npx prisma generate` (or pull the schema from an existing database: `npx prisma db pull`)
--   Start the app by running `npm run start`
+-   Start the app by running `npm run dev`
 
 ## ESLint
 
