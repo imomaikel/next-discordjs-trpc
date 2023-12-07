@@ -1,9 +1,9 @@
 import { TRPCError, initTRPC } from '@trpc/server';
 
-const t = initTRPC.create();
+const t = initTRPC.context<ExpressContext>().create();
 const middleware = t.middleware;
 
-const checkUser = middleware(async ({ next }) => {
+const checkUser = middleware(async ({ ctx, next }) => {
     // Auth check here
     // eslint-disable-next-line no-constant-condition
     if (true) {
